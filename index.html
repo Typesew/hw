@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuerySelector</title>
+    <title>Document</title>
 </head>
 <body>
-    
-
-    <script>
-        let sum = 0;
-        let res = 0;
-        for (let i = 1; i <= 10; i++){
-            if(i%2 == 1){
-                sum += 1;
-                res += i;
-            } else {continue;}
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
         }
-        console.log(res/sum)
-    </script>
+        .flex-containeer{
+            display: flex;
+            padding: 50px; 
+            justify-content: center;
+            background-color: yellow;
+        }
+        .but{
+            background-color: #fff;
+            width: 250px;
+            height: 100px;
+            border-radius: 50px;
+        }
+        @keyframes dash {
+            0%{
+
+            }
+            100%{
+                background-color: green;
+            color: #fff;
+            border: 5px dashed white;
+            }
+        }
+        .but:hover{
+            animation: dash .5s linear .5s 3;
+        }
+    </style>
+    <div class="flex-containeer"><button class="but">Click me!</button></div>
 </body>
 </html>
