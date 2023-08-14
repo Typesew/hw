@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button"  onclick = work() width="100px" value="работает?">
+    <input type="button" onclick = phrase() width="100px" value="Хм...">
+    <script>
+        let arr = ['Плата за индивидуальность — одиночество','Громким смехом не скроешь дикой боли','Навсегда ничего не бывает'];
+        function work(){
+            alert('Работает!не трогай!');
+        }
+        function phrase(){
+            for (let i = 0; i<arr.length;i++){
+                alert(arr[i]);
+            }
+        }
+    </script>
+</body>
+</html>
